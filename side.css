@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    font-family: 'Montserrat' serif ;
+    
+}
+
+.div-3{
+    margin-top: 50px;
+    
+}
+li{
+    list-style: none;
+    padding:  20px  10px;
+}
+li a{
+    text-decoration: none;
+    font-size: 0.9em;
+}
+li a:hover{
+    color:rgb(170, 145, 1);
+}
+.fa-x{
+    font-size: 1em;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    background-color: rgb(170, 145, 1);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    
+}
+.fa-x:hover{
+    color: white;
+    background-color: yellow;
+
+}
+
+.underneath, .page-ul{
+    display: none;
+}
+.underneath.visible{
+    display: block;
+    margin-top: 10px;
+    margin-left: 10px;
+    
+}
+.page-ul.visible{
+    display: block;
+    padding-left: 0;
+}
+.fa-arrow-circle-down{
+    position: absolute;
+    right: 5%;
+    border: 1px solid;
+    padding: 0 10px;
+    border-radius: 10px;
+    
+}
+.fa-arrow-circle-down:hover{
+    border-color: rgb(170, 145, 1);
+    color: rgb(170, 145, 1);
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="folder/register.css">
+    <link rel="stylesheet" href="asset/fontawesome/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Fanwood+Text:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+HU:wght@100..400&family=Twinkle+Star&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="asset/images.jpeg" type="image/jpeg">
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <ul class="ul-1">
+                <li ><a href="">+2348085764474</a></li>
+                <li><a href="">rasheedX46@gmail.com</a></li>
+                <li><a href="">Alapere Ketu Lagos</a></li>
+            </ul>
+            <ul class="ul-2">
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-.brands fa-x"></i></li>
+                <li><i class="fa-brands fa-linkedin"></i></li>
+            </ul>
+            
+        </nav>
+    </header>
+    <div class="booking">BOOKING FORM</div>
+    <form action="" id="form">
+        <div class="grid">
+            <div>
+                <label for="firstName">Name</label><br>
+                <input type="text" placeholder="Name" name="firstName" id="firstName" >
+            </div>
+            <div>
+                <label for="email">Email</label><br>
+                <input type="email" placeholder="email" name="email" id="email" required>
+            </div>
+            <div>
+                <label for="phone">Phone/Whatsapp</label><br>
+                <input type="number" placeholder="phone number" name="phone" id="phone" required>
+            </div>
+            
+            <div>
+                <label for="course">Course</label><br>
+                    <select name="course" id="course">
+                            <option value=""> Select Course </option>
+                            <option value="quran basis">Reading Quran Basis</option>
+                            <option value="tafseer">Tafseerul Quran</option>
+                            <option value="tajweed">Quran Tajweed</option>
+                            <option value="quran-for-kids">Quran Classes for Kids</option>
+                            <option value="recitation">Quran Recitation</option>
+                            
+                    </select>
+            </div>    
+            <div>
+                <label for="start">Start Date</label><br>
+                <input type="date" placeholder="date" name="start" id="start" required>
+            </div>
+            <div>
+                <label for="end">Preferred Time for Classes</label><br>
+                <input type="time" placeholder="date" name="end" id="end">
+
+
+            </div>
+        </div>
+        <div>
+            <label for="info">Message</label><br>
+        <textarea name="info" id="info" cols="10" rows="10" placeholder="message"></textarea>
+        </div>
+        <input class="send" type="submit" value="register"   />
+            
+
+    </form>
+    <div id="errorMessage"  class="error"></div>
+    <script  src="form.js">
+
+    </script>
+</body>
+</html>
