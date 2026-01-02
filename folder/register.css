@@ -1,0 +1,176 @@
+body{
+    background-color: rgba(247, 226, 36, 0.3);
+    margin:0;
+    padding: 0;
+    font-family: "Fanwood Text", serif; 
+}
+nav{
+    display: flex;
+    background-color:rgb(2, 2, 68) ;
+    flex-wrap: wrap;  
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding:0;
+
+}
+ul a{
+    
+    text-decoration: none;
+}
+
+.ul-1{
+    display: flex;
+    width: 40%;
+
+}
+.ul-1 a{
+    display:block;
+    color:#fff;
+    text-align: center;
+}
+.ul-1 li{
+    flex:1 1 0;
+}
+.ul-2{
+    display: flex;
+    width: 20%;
+    justify-content: space-evenly;
+    
+}
+.ul-2 i{
+    color: white;
+    font-size: 20px;
+}
+.booking{
+    font-size: 30px;
+    font-family: "Montserrat", cursive; 
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 600;
+    
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(50px, auto);
+    width: 80%;
+    margin: 10px auto;
+}
+input, select{
+    padding: 10px;
+    width: 80%;
+    border-radius: 20px;
+    border:1px solid  rgba(0, 0, 0,0.5);
+    outline-color: transparent;
+    margin-bottom: 20px;
+}
+select{
+    width: 85%;
+}
+textarea{
+    margin: auto;
+    display: block;
+    width:74%;
+    margin-left: 10%;
+    border-radius: 10px;
+}
+label[for= "info"] {
+    margin: auto;
+    display: block;
+    margin-left:10%;
+
+
+}
+input[type="email"]:valid{
+    border: 3px solid green;
+}
+input:focus{
+    outline-color:rgba(0, 0, 0,0.5);
+}
+.send{
+    padding: 10px;
+    background-color: rgb(170, 145, 1);
+    width: 73%;
+    margin: 20px auto;
+    margin-left: 10%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+@media screen and (max-width: 1115px){
+    .ul-1 {
+        font-size: 13px;
+        display: block;
+        margin-bottom: 5px;
+    }
+    .ul-1 a{
+        text-align: start
+    }
+}
+
+@media screen and (max-width: 768px){
+    .grid{
+        display: block;
+        width: 90%;
+    }
+    .send, textarea{
+        margin-left:  5%;
+    }
+     a{
+        font-size: 12px;
+    }
+    .ul-2 i{
+        font-size: 13px;
+    }ul
+    .ul-1 {
+        width: 60%;
+        display:block;
+    }
+    .ul-1 a{
+        text-align: start;
+        padding: 3px;
+    }
+}
+@media screen and (max-width:470px){
+    ul a{
+        font-size: 10px;
+        
+    }
+    .ul-2{
+        width: 35%;
+    }
+    .booking{
+        font-size: 20px;
+    }
+    .ul-1 a{
+        margin-bottom: 5px;
+    }
+
+    input{
+        width: 90%;
+    
+    }
+    select{
+        width: 95%;
+    }
+    textarea{
+        width: 85%;
+    }
+    .send{
+        width: 81%;
+    }
+}
+
+.error{
+    color: red;
+    font-size: 20px;
+    text-align: center;
+}
