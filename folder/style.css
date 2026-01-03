@@ -343,6 +343,7 @@ ul{
 .uniformity{
     width: 90%; 
     margin: 10px auto;
+    
 }
 .read-more{
     padding: 10px;
@@ -788,6 +789,7 @@ footer{
         padding: 5px;
         font-size: 12px;
         align-self: start;
+
     }
     /* .ul-1{
         font-size: 13px;
