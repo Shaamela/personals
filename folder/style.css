@@ -1,7 +1,6 @@
 body{
-    margin:0;
     padding: 0;
-    font-family: "Montserrat", sans-serif;    
+    margin: 0;
 }
 nav{
     display: flex;
@@ -343,7 +342,6 @@ ul{
 .uniformity{
     width: 90%; 
     margin: 10px auto;
-    
 }
 .read-more{
     padding: 10px;
@@ -744,6 +742,29 @@ footer{
     padding: 10px;
     margin-top: 15px;
 }
+.cross{
+    background-color: rgb(170, 145, 1);
+    border: 1px solid transparent; 
+    float: left;
+    color: whitesmoke;
+}
+
+.pop{
+    position: absolute; 
+    bottom: 20%;  
+    display: none;
+
+}
+.pop input {
+    padding: 10px;
+}
+
+
+#Tafseer{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
 @media screen and (max-width: 1200px){
     .ul-1 a{
         font-size: 0.8em;
@@ -789,14 +810,8 @@ footer{
         padding: 5px;
         font-size: 12px;
         align-self: start;
-
     }
-    /* .ul-1{
-        font-size: 13px;
-        display: block;
-        margin-bottom: 15px;
-
-    } */
+    
     .ul-1 a{
         text-align: center;
     }
@@ -892,6 +907,16 @@ footer{
     
     
     }
+
+    #Tafseer{
+        width: 82%;
+    }
+    .pop input{
+        width: 70%;
+    }
+
+    .pop{
+        bottom: 20%;
 
 }
 @media screen and (max-width: 615px) {
@@ -1009,3 +1034,7 @@ footer{
     }
 
 }
+
+
+}
+

@@ -45,3 +45,26 @@ animateAs.forEach((element) => {
   observing.observe(element);
 });
 
+
+const freeTrial = document.querySelectorAll('.freetrial');
+let invisible = document.querySelectorAll('.pop');
+let cs = document.getElementsByClassName('cross');
+
+ freeTrial.forEach((element, index) => {
+    if (Number (element.getAttribute('id')) === index){
+      element.addEventListener('click',  (e) => {
+        invisible[index].style.display = 'block';
+
+      })
+    }
+ })
+
+  cs = Array.from(cs);
+  cs.forEach((item, index) => {
+    item.addEventListener('click', ()=> {
+      if(index === Number(freeTrial[index].getAttribute('id'))) {
+        invisible[index].style.display = 'none';
+      }
+    })
+  })
+
