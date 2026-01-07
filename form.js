@@ -1,5 +1,5 @@
 
-let errorMessage = document.querySelector('#errorMessage');
+const errorMessage = document.querySelector('#errorMessage');
 const form = document.querySelector('#form');
 const date = document.querySelector('#start');
 const textArea = document.querySelector('textarea');
@@ -24,16 +24,11 @@ form.addEventListener('submit', (e) => {
                 textArea.focus();
                 return
         }
+        window.location.href = '/'; 
 
-        form.elements.firstName.value = "";
-        form.elements.email.value = "";
-        form.elements.phone.value = "";
-        form.elements.start.value ="";
-        form.elements.end.value = "";
-        textArea.value = "",
-        
 
 });
 function displayError(error) {
         errorMessage.textContent = `${error}`;
 }
+

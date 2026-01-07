@@ -9,8 +9,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Fanwood+Text:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+HU:wght@100..400&family=Twinkle+Star&display=swap" rel="stylesheet">
-
     <link rel="icon" href="asset/images.jpeg" type="image/jpeg">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: "YIlHW1WtcEo-KwEgi",
+            });
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(() => {
+                        console.log('SUCCESS!');
+                    }, (error) => {
+                        console.log('FAILED...', error);
+                    });
+            });
+            
+        }
+    </script>
+
+    
 </head>
 <body>
     
@@ -73,13 +98,17 @@
             <label for="info">Message</label><br>
         <textarea name="info" id="info" cols="10" rows="10" placeholder="message"></textarea>
         </div>
-        <input class="send" type="submit" value="register"   />
+        <input class="send" type="submit" value="Submit"   />
             
 
     </form>
     <div id="errorMessage"  class="error"></div>
+
+
+
     <script  src="form.js">
 
     </script>
+    
 </body>
 </html>
