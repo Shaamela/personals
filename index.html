@@ -17,9 +17,9 @@
     <header>
         <nav>
             <ul class="ul-1">
-                <li ><a href="">+2348085764474</a></li>
-                <li><a href="">rasheedX46@gmail.com</a></li>
-                <li><a href="">Nigeria</a></li>
+                <li >+2348085764474</li>
+                <li>rasheedX46@gmail.com</li>
+                <li>Nigeria</li>
             </ul>
             <ul class="ul-2">
                 <li><i class="fa-brands fa-facebook"></i></li>
@@ -38,25 +38,32 @@
             </div>
             
                 <div class="div-3">
-                    <li><a href="" class="home">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="" class="underneath-controller"> Courses
+                    <li><a href="/" class="home">Home</a></li>
+                    <li><a href="#setAbout">About</a></li>
+                    <li><a href="#setCourses" class="underneath-controller"> Courses
                         <i class="fa-solid fa-arrow-circle-down"></i>
-                        <div class="underneath">Courses</div>
+                        <div class="underneath">
+                            <p>Reading Quran Basics</p>
+                            <p>Tajweedul Quran</p>
+                            <p>Tafseerul Quran</p>
+                            <p>Quran Memorization</p>
+                            <p>Arabic and ISlamic Knowledge</p>
+
+                        </div>
                     </a> 
                       
                     </li>
                     <li>
-                        <a href="" class="page-under">Pages
+                        <div class="page-under">Pages
                         <i class="fa-solid fa-arrow-circle-down"></i>
                         <ul class="page-ul">
-                            <li>Pricing</li>
-                            <li>Testimonials</li>
-                            <li>Teachers</li>
-                            <li>FAQ</li>
+                            <li onclick="alert('chat with us on our whatsapp page')">Pricing</li>
+                            <li><a href="#setTestimonials">Testimonials</a></li>
+                            <li> <a href="#setTeachers">Teachers</a></li> 
+                            <li><a href="#setContact">Contact</a></li>
                         </ul>
-                    </a></li>
-                    <li><a href="">Contact</a></li>
+                    </div></li>
+                    <li><a href="#setContact">Contact</a></li>
                 </div>
                 <div class="div-2">
                     <button><a href="register.html" target="_blank">Enrol Now</a></button>
@@ -127,7 +134,7 @@
     </main>
     <article>
         
-        <div class="article  js-article">
+        <div class="article  js-article" id="setAbout">
             <h1>LEARN QURAN WITH TAJWEED </h1>
             <p>Are you looking to improve your Quran recitation skills with proper Tajweed? Do you want to learn Quran online from the comfort
                 of your own home? Look no further! Our online Quran learning platform offers a comprehensive and interractive way 
@@ -203,7 +210,7 @@
 
     <section class="section">
         <div class="wrapper">
-            <div class="item-0 content"><hr > <span style="display: inline-block;">FEATURED COURSES</span> <hr></div>
+            <div class="item-0 content" id="setCourses"><hr > <span style="display: inline-block;">FEATURED COURSES</span> <hr></div>
             <div class="item-1 animate-me">
                 <div class="uniformity"><img src="asset/img-5.jpg" alt="" height="160"></div>
                 <div class="inner">
@@ -395,7 +402,7 @@
         <div class="content">
             <hr > <span style="display: inline-block;">OUR TEACHERS</span> <hr>
         </div>
-        <div class="teachers">
+        <div class="teachers" id="setTeachers">
             <div class="teach">
                 <img src="asset/editavatar_1.jpg" alt="">
                 <p>USTADH UMAR</p>
@@ -433,7 +440,7 @@
 
     </section>
     <section class="parent">
-            <div class="div-parent">
+            <div class="div-parent" id="setTestimonials">
                 <h3 style="color: white;">PARENT'S COMMENT</h3>
                 <i class="fa-solid fa-comment-alt"></i>
                 <p>
@@ -451,7 +458,7 @@
     </section>      
     <footer>
         <div class="footer">
-            <div class="footer-1">
+            <div class="footer-1" id="setContact">
                 <p class="f-1-p"><i class="fa-solid fa-phone-volume"></i>
                 </p> 
                 <p class="f-2-p"><span>PHONE</span> <br><br>+2348085764474 <br>+2348157736245</p> 

@@ -105,6 +105,11 @@ input:focus{
     text-align: center;
 }
 
+.send:hover{
+    background-color:rgba(170, 145, 1, 0.5);
+    color: rgba(0, 0, 0,0.5)
+}
+
 @media screen and (max-width: 1115px){
     .ul-1 {
         font-size: 13px;
@@ -124,6 +129,7 @@ input:focus{
     .send, textarea{
         margin-left:  5%;
     }
+    
      a{
         font-size: 12px;
     }
