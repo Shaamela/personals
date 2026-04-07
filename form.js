@@ -104,9 +104,11 @@ form.addEventListener('submit', (e) => {
         finalResult.innerHTML = "";
    let output = validateEverything();
    if(!output) {
-    finalResult.textContent = 'Registration not successful'
+    finalResult.textContent = 'Registration not successful';
+    window.alert('Registration not completed')
    } else{
     finalResult.textContent = 'Registration complete';
+    window.alert('Registration successful')
    }
    fullName.value = "";
    email.value= "";
@@ -115,42 +117,5 @@ form.addEventListener('submit', (e) => {
    date.value = "";
    course.value = "";
    end.value = "";
-   window.alert('Registration completed')
    
-   
-
-
 })
-
-
-        // const {firstName, email, phone, start, end, info } = form.elements;
-        // errorMessage.textContent = "";
-        // if (!firstName.value.trim()) {
-        //         displayError("Name is required");
-        //         firstName.focus()
-        //         return
-        // }
-        // let value = start.valueAsDate;
-        // let date = new Date();
-        // if (value  <= date) {
-        //         displayError('Enter a later date, please!');
-        //         date.focus()
-        //         return
-        // }
-        // if (textArea.value.length < 50) {
-        //         displayError('Enter a message of fifty minimum words. Pls include your location')
-        //         textArea.focus();
-        //         return
-        // }
-        // // window.location.href = '/'; 
-        // window.alert('Message sent');
-        // window.setTimeout(() => {
-        //         form.elements.firstName.value = "";
-        //         form.elements.email.value = "";
-        //         form.elements.phone.value = "";
-        //         form.elements.start.value = "";
-        //         form.elements.end.value = "";
-        //         form.elements.info.value = "";
-        // }, 4000)
-
-
