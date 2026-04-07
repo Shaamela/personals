@@ -21,7 +21,7 @@
     </script>
     <script type="text/javascript">
         window.onload = function() {
-            document.getElementById('form').addEventListener('submit', function(event) {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
                 event.preventDefault();
                 // these IDs from the previous steps
                 emailjs.sendForm('contact_service', 'contact_form', this)
@@ -31,7 +31,6 @@
                         console.log('FAILED...', error);
                     });
             });
-            
         }
     </script> 
 
