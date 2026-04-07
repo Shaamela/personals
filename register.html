@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Fanwood+Text:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+HU:wght@100..400&family=Twinkle+Star&display=swap" rel="stylesheet">
     <link rel="icon" href="asset/images.jpeg" type="image/jpeg">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
         (function() {
             // https://dashboard.emailjs.com/admin/account
@@ -33,7 +33,7 @@
             });
             
         }
-    </script>
+    </script> 
 
     
 </head>
@@ -56,19 +56,22 @@
         </nav>
     </header>
     <div class="booking">BOOKING FORM</div>
-    <form action="" id="form">
+    <form  id="form">
         <div class="grid">
             <div>
                 <label for="firstName">Name</label><br>
                 <input type="text" placeholder="Name" name="firstName" id="firstName" >
+                <p id="nameError" class="error"></p>
             </div>
             <div>
                 <label for="email">Email</label><br>
                 <input type="email" placeholder="email" name="email" id="email" required>
+                <p id="emailError"  class="error"></p>
             </div>
             <div>
                 <label for="phone">Phone/Whatsapp</label><br>
                 <input type="number" placeholder="phone number" name="phone" id="phone" required>
+                <p id="phoneError" class="error"></p>
             </div>
             
             <div>
@@ -86,6 +89,7 @@
             <div>
                 <label for="start">Start Date</label><br>
                 <input type="date" placeholder="date" name="start" id="start" required>
+                <p id="dateError" class="error"></p>
             </div>
             <div>
                 <label for="end">Preferred Time for Classes</label><br>
@@ -96,13 +100,14 @@
         </div>
         <div>
             <label for="info">Message</label><br>
+            <p id="infoError"></p>
         <textarea name="info" id="info" cols="10" rows="10" placeholder="message"></textarea>
         </div>
-        <input class="send" type="submit" value="Submit"   />
+        <input class="send" type="submit" value="Submit" />
             
 
     </form>
-    <div id="errorMessage"  class="error"></div>
+    <div id="result"  class="error"></div>
 
 
 
