@@ -103,7 +103,7 @@ form.addEventListener('submit', (e) => {
         finalResult.innerHTML = "";
    let output = validateEverything();
    if(!output) {
-    e.preventDefault()
+    //e.preventDefault();
     finalResult.textContent = 'Registration not successful';
     window.alert('Registration not completed')
    } else{
