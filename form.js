@@ -98,24 +98,66 @@ function validateEverything () {
 }
 
 
+// This waits for the entire page & EmailJS library to load
+window.onload = function() {
+    console.log("Step 1: Page Loaded");
 
-form.addEventListener('submit', (e) => {
-        finalResult.innerHTML = "";
-   let output = validateEverything();
-   if(!output) {
-    //e.preventDefault();
-    finalResult.textContent = 'Registration not successful';
-    window.alert('Registration not completed')
-   } else{
-    finalResult.textContent = 'Registration complete';
-    window.alert('Registration successful')
-   }
-   fullName.value = "";
-   email.value= "";
-   phone.value = "";
-   textArea.value = "";
-   date.value = "";
-   course.value = "";
-   end.value = "";
-   
-})
+    // INITIALIZE with your Public Key
+    emailjs.init("YIlHW1WtcEo-KwEgi"); 
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        console.log("Step 2: Form Submitted & Default Prevented");
+
+        const serviceID = 'contact_service123';
+        const templateID = 'contact_form';
+        let output = validateEverything();
+
+        // sendForm(serviceID, templateID, formElement)
+        if(output){
+          
+          emailjs.sendForm(serviceID, templateID, this)
+            .then(() => {
+                alert('Sent Successfully!');
+                fullName.value = "";
+                email.value= "";
+                phone.value = "";
+                textArea.value = "";
+                date.value = "";
+                course.value = "";
+                end.value = "";
+            }, (err) => {
+                console.log("Step 3: Failed...", err);
+                // This alert will tell us the SPECIFIC reason for the failure
+                alert("Error: " + JSON.stringify(err));
+            });
+            } else {
+                 window.alert('Registration not completed')
+            }
+            }
+
+            
+          
+          );
+
+              
+
+};
+          
+
+// form.addEventListener('submit', (e) => {
+//         e.preventDefault()
+//         finalResult.innerHTML = "";
+//    let output = validateEverything();
+//    if(!output) {
+    
+//     finalResult.textContent = 'Registration not successful';
+//     window.alert('Registration not completed')
+//    } else{
+//                 // these IDs from the previous steps
+//                 emailjs.sendForm('contact_service123', 'contact_form', this)
+//                     .then(() => {
+//                       //finalResult.textContent = 'Registration complete';
+//                       window.alert('Registration successful')
+                        
+//         
